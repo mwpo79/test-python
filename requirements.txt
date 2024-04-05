@@ -1,1 +1,3 @@
-# add your libs here
+fastapi
+uvicorn
+watchfiles
