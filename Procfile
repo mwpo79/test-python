@@ -1,1 +1,1 @@
-web: python main.py
+web: pip3 install -r requirements.txt && python main.py
