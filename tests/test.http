@@ -1,0 +1,11 @@
+##########################################
+## TEST MS {ms_name}
+##########################################
+
+@host=http://localhost:30001
+@route=machinelarning
+
+GET {{host}}/api/v4/{{route}}/sayHello?name=dev
+Accept: application/json
+Content-Type: application/json
+ 
