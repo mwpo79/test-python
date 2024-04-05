@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.models.say_hello_response import SayHelloResponse
+from workspace.models.say_hello_response import SayHelloResponse
 
 greet_controller = APIRouter()
 

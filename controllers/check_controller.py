@@ -1,7 +1,7 @@
 import os
 from fastapi import APIRouter, HTTPException
-from app.models.version_response import VersionResponse
-from app.models.health_response import HealthResponse
+from workspace.models.version_response import VersionResponse
+from workspace.models.health_response import HealthResponse
 
 check_controller = APIRouter()
 
