@@ -1,4 +1,5 @@
 import uvicorn
+
 from fastapi import FastAPI
 from app.controllers.check_controller import check_controller
 from app.controllers.greet_controller import greet_controller
