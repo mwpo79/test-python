@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
-from controllers.check_controller import check_controller
-from controllers.greet_controller import greet_controller
+from app.controllers.check_controller import check_controller
+from app.controllers.greet_controller import greet_controller
 from starlette.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -10,8 +10,8 @@ app.add_middleware(CORSMiddleware,
                    allow_methods=["*"],
                    allow_headers=["*"])
 
-app.include_router(check_controller, prefix="/")
-app.include_router(greet_controller, prefix="/")
+app.include_router(check_controller)
+app.include_router(greet_controller)
 
 # start the server using python main.py to enable live reload
 if __name__ == "__main__":
